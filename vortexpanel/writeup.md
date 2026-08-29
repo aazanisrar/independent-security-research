@@ -1,4 +1,4 @@
-# VortexPanel — PHP Webshell Scanner False Negative
+# VortexPanel  PHP Webshell Scanner False Negative
 
 **Target:** VortexPanel v3.4.9
 **Type:** Self-hosted server control panel (Python/Flask, runs as root)
@@ -13,8 +13,8 @@ calls with user input, and obfuscation markers. Testing found that the scanner
 fails to flag a PHP file containing a hardcoded reverse shell payload using
 `exec()`, producing a false negative.
 
-On a standard VortexPanel deployment — which runs as root and uses Apache/Nginx
-to serve panel-hosted websites — successful exploitation of this gap results in
+On a standard VortexPanel deployment which runs as root and uses Apache/Nginx
+to serve panel-hosted websites successful exploitation of this gap results in
 full system compromise. The scanner's false negative creates false confidence:
 an administrator relying on the scanner to vet uploaded content would believe a
 malicious file was clean.
