@@ -24,8 +24,11 @@ including negative findings.
 | 4 | WebSSH | Web-based SSH client | No findings — auth and session handling confirmed sound; protocol-level testing via custom SSH mimicker |
 | 5 | Keyper | Self-hosted credential manager | No findings — encryption and access control confirmed sound; app does not parse or interpret stored content |
 | 6 | Coupon browser extension | Chrome extension backend | No findings — race condition testing (50 concurrent requests) confirmed atomic DB operations with proper locking |
+| 7 | urlvet | Self-hosted phishing link scanner | Rate limit bypass via X-Forwarded-For spoofing (CWE-348, CWE-307, CVSS 5.3), reported, fixed in v0.4.0. [Advisory](https://github.com/urlvet/urlvet/security/advisories/GHSA-jvxq-3x7m-258w), CVE pending |
+
+
+Write-ups for the remaining targets are being added.
 
 ## Certifications
 
-(ISC)² Certified in Cybersecurity (CC)
-Actively pursuing (ISC)² CPE credit through documented independent research (see individual write-ups for logged hours).
+(ISC)² Certified in Cybersecurity (CC). Actively earning (ISC)² CPE credit through documented independent research.
